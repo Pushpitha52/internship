@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillMatch AI - Student Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card dashboard-card">
+      <div class="logo">SkillMatch AI</div>
+      <h2>Student Portal</h2>
+      <div class="welcome-section">
+        <p class="welcome-text">Welcome, <span id="user-name">Student</span>!</p>
+        <p class="subtitle">You are logged in as a student. Explore your skill matching dashboard below.</p>
+      </div>
+
+      <div class="dashboard-content">
+        <div class="info-box">
+          <h3>Your Profile</h3>
+          <p>Manage your skills, view matched opportunities, and track your progress.</p>
+        </div>
+        <div class="info-box">
+          <h3>Skill Matching</h3>
+          <p>Our AI-powered engine matches your skills with the best opportunities available.</p>
+        </div>
+      </div>
+
+      <button class="btn btn-danger" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    checkAuth("student");
+  </script>
+</body>
+</html>

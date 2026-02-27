@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillMatch AI - Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card dashboard-card">
+      <div class="logo">SkillMatch AI</div>
+      <h2>Admin Dashboard</h2>
+      <div class="welcome-section">
+        <p class="welcome-text">Welcome, <span id="user-name">Admin</span>!</p>
+        <p class="subtitle">You have administrator access to manage the platform.</p>
+      </div>
+
+      <div class="dashboard-content">
+        <div class="info-box">
+          <h3>User Management</h3>
+          <p>View and manage all registered students and their profiles.</p>
+        </div>
+        <div class="info-box">
+          <h3>Platform Analytics</h3>
+          <p>Monitor platform usage, skill matching statistics, and overall performance.</p>
+        </div>
+        <div class="info-box">
+          <h3>System Settings</h3>
+          <p>Configure platform settings, matching algorithms, and access controls.</p>
+        </div>
+      </div>
+
+      <button class="btn btn-danger" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    checkAuth("admin");
+  </script>
+</body>
+</html>
